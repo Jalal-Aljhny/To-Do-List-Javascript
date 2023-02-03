@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form {
+  background-color: rgb(240, 240, 240);
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="submit"] {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: orangered;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(255, 38, 0);
+}
+.tasks {
+  background-color: rgb(240, 240, 240);
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.task {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task:hover {
+  background-color: rgb(252, 252, 252);
+}
+.task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.task.done {
+  background-color: rgb(247, 247, 247);
+}
+.task.done span:nth-child(1) {
+  cursor: auto;
+}
+.task span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: orangered;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.task span:hover {
+  background-color: rgb(255, 38, 0);
+}
+span:nth-child(2) {
+  margin-left: 10px;
+}
